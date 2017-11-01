@@ -157,6 +157,7 @@ class App extends Component {
         <section id="home-onepage-event" class="home-onepage-menu content-reservation-03" />
         <section id="home-onepage-reservation" class="home-onepage-menu content-reservation-03" />
         <section id="home-onepage-contact" class="home-onepage-menu content-reservation-03" />
+        <script type="text/javascript" src="%PUBLIC_URL%/vendor/FullscreenOverlayStyles/js/demo1.js"></script>
       </div>
     );
   }
