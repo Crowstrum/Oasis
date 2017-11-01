@@ -12,17 +12,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="WrapHomeOnepage">
-        <header className="WrapHomeOnepageHeader">
-          <div className="WrapHomeOnepageHeader HomeOnepageRestyle">
-            <div className="HomeOnepageHeaderLogo">
-              <a href="index.html"><img alt="logo-deli" src="images/icons/logo.png" />></a>
+      <div className="wrap-home-onepage-header" style={{ backgroundColor: '#000000' }}>
+        <header className="wrap-home-onepage-header">
+          <div className="home-onepage-header home-onepage-restyle">
+            <div className="home-onepage-header-logo">
+              <a href="index.html"><img alt="logo-deli" src={require('./images/icons/logo.png')} />></a>
             </div>
 
-            <div className="HomeOnepageHeaderBtnShowMenu">
-              <div id="trigger-overlay" className="Hamburger HamburgerSqueeze">
-                <span className="HamburgerBox">
-                  <span className="HamburgerInner"></span>
+            <div className="home-onepage-header-btn-show-menu">
+              <div id="trigger-overlay" className="hamburger hamburger--squeeze">
+                <span className="hamburger-box">
+                  <span className="hamburger-inner"></span>
                 </span>
               </div>
             </div>
