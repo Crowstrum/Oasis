@@ -1,23 +1,17 @@
-var triggerBttn = document.getElementById('trigger-overlay');
-var overlay = document.querySelector('div.overlay');
-var closeBttn = document.querySelector('.overlay-close');
-var calback = function () {
 
-	triggerBttn = document.getElementById('trigger-overlay');
-	overlay = document.querySelector('div.overlay');
-	closeBttn = document.querySelector('.overlay-close');
-	if (!triggerBttn || !overlay || !closeBttn) {
-		//	check();
-	}
-	transEndEventNames = {
+var triggerBttn;
+var overlay;
+var closeBttn;
+var deets = function () {
+	var transEndEventNames = {
 		'WebkitTransition': 'webkitTransitionEnd',
 		'MozTransition': 'transitionend',
 		'OTransition': 'oTransitionEnd',
 		'msTransition': 'MSTransitionEnd',
 		'transition': 'transitionend'
-	},
-		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-		support = { transitions: Modernizr.csstransitions };
+	};
+	var transEndEventName = transEndEventNames[Modernizr.prefixed('transition')];
+	var support = { transitions: Modernizr.csstransitions };
 
 	function toggleOverlay() {
 		if (classie.has(overlay, 'open')) {
@@ -49,12 +43,24 @@ var calback = function () {
 	closeBttn.addEventListener('click', toggleOverlay);
 	$('.home-onepage-menu-overlay a').on('click', toggleOverlay);
 };
+
+var calback = function () {
+	triggerBttn = document.getElementById('trigger-overlay');
+	overlay = document.querySelector('div.overlay');
+	closeBttn = document.querySelector('.overlay-close');
+	if (!triggerBttn || !overlay || !closeBttn) {
+		check();
+		return;
+	} else {
+		deets();
+	}
+}
+
 var check = function () {
 	if (!triggerBttn || !overlay || !closeBttn) {
-		alert();
 		window.requestAnimationFrame(calback);
 	} else {
 		alert('got em');
 	}
 }
-document.addEventListener('DOMContentLoaded', calback);
+document.addEventListener('DOMContentLoaded', check);
