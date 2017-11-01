@@ -18,7 +18,6 @@ class App extends Component {
             <div className="home-onepage-header-logo">
               <a href="index.html"><img alt="logo-deli" src={require('./images/icons/logo.png')} />></a>
             </div>
-
             <div className="home-onepage-header-btn-show-menu">
               <div id="trigger-overlay" className="hamburger hamburger--squeeze">
                 <span className="hamburger-box">
@@ -62,7 +61,6 @@ class App extends Component {
           </div>
         </div>
 
-
         <section id="slider-deli">
 
           <div className="rev_slider_wrapper for-vertical-page">
@@ -70,7 +68,7 @@ class App extends Component {
               <ul>
 
                 <li data-transition="fade">
-                  <img src="images/home-onepage-img-slide.jpg" alt="Fresh Ingredients" className="rev-slidebg"
+                  <img src={require("./images/home-onepage-img-slide.jpg")} alt="Fresh Ingredients" className="rev-slidebg"
                     data-bgposition="center center"
                     data-bgfit="cover"
                     data-bgrepeat="no-repeat" />
@@ -153,11 +151,11 @@ class App extends Component {
           </div>
 
         </div>
-        <section id="home-onepage-our-menu" class="home-onepage-menu content-reservation-03" />
-        <section id="home-onepage-event" class="home-onepage-menu content-reservation-03" />
-        <section id="home-onepage-reservation" class="home-onepage-menu content-reservation-03" />
-        <section id="home-onepage-contact" class="home-onepage-menu content-reservation-03" />
-        <script type="text/javascript" src="%PUBLIC_URL%/vendor/FullscreenOverlayStyles/js/demo1.js"></script>
+        <section id="home-onepage-our-menu" className="home-onepage-menu content-reservation-03" />
+        <section id="home-onepage-event" className="home-onepage-menu content-reservation-03" />
+        <section id="home-onepage-reservation" className="home-onepage-menu content-reservation-03" />
+        <section id="home-onepage-contact" className="home-onepage-menu content-reservation-03" />
+
       </div>
     );
   }

@@ -1,7 +1,14 @@
-(function () {
-	var triggerBttn = document.getElementById('trigger-overlay'),
-		overlay = document.querySelector('div.overlay'),
-		closeBttn = overlay.querySelector('.overlay-close');
+var triggerBttn = document.getElementById('trigger-overlay');
+var overlay = document.querySelector('div.overlay');
+var closeBttn = document.querySelector('.overlay-close');
+var calback = function () {
+
+	triggerBttn = document.getElementById('trigger-overlay');
+	overlay = document.querySelector('div.overlay');
+	closeBttn = document.querySelector('.overlay-close');
+	if (!triggerBttn || !overlay || !closeBttn) {
+		//	check();
+	}
 	transEndEventNames = {
 		'WebkitTransition': 'webkitTransitionEnd',
 		'MozTransition': 'transitionend',
@@ -41,4 +48,13 @@
 	triggerBttn.addEventListener('click', toggleOverlay);
 	closeBttn.addEventListener('click', toggleOverlay);
 	$('.home-onepage-menu-overlay a').on('click', toggleOverlay);
-})();
+};
+var check = function () {
+	if (!triggerBttn || !overlay || !closeBttn) {
+		alert();
+		window.requestAnimationFrame(calback);
+	} else {
+		alert('got em');
+	}
+}
+document.addEventListener('DOMContentLoaded', calback);
