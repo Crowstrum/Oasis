@@ -1,57 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './Header/Header';
 
 class App extends Component {
   state = { users: [] }
 
   componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({ users }));
+
   }
 
   render() {
     return (
       <div className="wrap-home-onepage">
         <div className="wrap-home-onepage-header" style={{ backgroundColor: '#000000' }}>
-          <header className="wrap-home-onepage-header">
-            <div className="home-onepage-header home-onepage-restyle">
-              <div className="home-onepage-header-logo">
-                <a href="index.html"><img alt="logo-deli" src={require('./images/icons/logo.png')} />></a>
-              </div>
-              <div className="home-onepage-header-btn-show-menu">
-                <div id="trigger-overlay" className="hamburger hamburger-squeeze">
-                  <span className="hamburger-box">
-                    <span className="hamburger-inner"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </header>
-
-          <div className="overlay overlay-slidedown">
-            <div className="home-onepage-header-logo">
-              <a href="index.html"><img alt="logo-deli" src="images/icons/logo.png" />></a>
-            </div>
-
-            <div className="overlay-close">
-              <div className="is-active hamburger hamburger-squeeze">
-                <span className="hamburger-box">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </div>
-            </div>
-            <nav>
-              <ul className="home-onepage-menu-overlay">
-                <li><a href="#home-onepage-intro">About restaurant</a></li>
-                <li><a href="#home-onepage-our-menu">Menus</a></li>
-                <li><a href="#home-onepage-event">Events</a></li>
-                <li><a href="#home-onepage-reservation">Reservations</a></li>
-                <li><a href="#home-onepage-contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
+          <Header />
 
           <div className="home-onepage-wrap-menu-bar-top">
             <div className="home-onepage-menu-bar-top">
@@ -103,7 +65,7 @@ class App extends Component {
                       data-width="['1140','960','720','540']"
                       data-lineheight="['150', '150', '120', '100']"
                       data-fontsize="['110', '110', '100', '90']"
-                      data-height="['auto']">Deli Restaurant</h3>
+                      data-height="['auto']">Upgrade Your Smoke</h3>
 
                   </li>
                 </ul>
@@ -156,10 +118,10 @@ class App extends Component {
           <section id="home-onepage-our-menu" className="home-onepage-menu content-reservation-03" />
           <section id="home-onepage-event" className="home-onepage-menu content-reservation-03" />
           <section id="home-onepage-reservation" className="home-onepage-menu content-reservation-03" />
-          <section id="home-onepage-contact" className="home-onepage-menu content-reservation-03" />
+          <footer id="home-onepage-contact" className="home-onepage-footer" />
 
         </div>
-      </div>
+      </div >
     );
   }
 }
