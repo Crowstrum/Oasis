@@ -4,8 +4,6 @@ class Header extends Component {
     state = { isMenuOpen: false }
     handleMenuClick = (e) => {
         const target = e.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        console.log(target.checked);
         this.setState({ isMenuOpen: target.checked });
     }
     handleLinkClick = () => {
@@ -32,7 +30,7 @@ class Header extends Component {
                     <label htmlFor="op"><img src={require('../images/cross.png')} style={{ padding: '10px', right: '0px', position: 'absolute' }} /></label>
                     <nav>
                         <ul>
-                            <li><a href="#home-onepage-intro" onClick={this.handleLinkClick}>About restaurant</a></li>
+                            <li><a className="home-onepage-intro" href="#home-onepage-intro" onClick={this.handleLinkClick}>About restaurant</a></li>
                             <li><a href="#home-onepage-our-menu" onClick={this.handleLinkClick}>Menus</a></li>
                             <li><a href="#home-onepage-event" onClick={this.handleLinkClick}>Events</a></li>
                             <li><a href="#home-onepage-reservation" onClick={this.handleLinkClick}>Reservations</a></li>
