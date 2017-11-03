@@ -15,15 +15,15 @@ class Slider extends Component {
                                     data-bgfit="cover"
                                     data-bgrepeat="no-repeat" />
 
-                                <div class="rs-background-video-layer"
-                                    data-videomp4={require('../../Video/smokeVideo.mp4')}
-                                    data-videopreload="none"
-                                    data-volume="100"
-                                    data-forcerewind="on"
-                                    data-nextslideatend="true"
-                                    data-videoloop="loopandnoslidestop"
-
-                                ></div>
+                                <div class="rs-background-video-layer" 
+         data-videomp4="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" 
+         data-videopreload="auto" 
+         data-volume="100" 
+         data-forcerewind="on" 
+         data-nextslideatend="true" 
+         data-videoloop="loopandnoslidestop" 
+ 
+    ></div>
 
                                 <h4 className="tp-caption tp-resizeme  caption-1"
                                     data-frames='[{"delay":1000,"split":"chars","splitdelay":0.05,"speed":1500,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
