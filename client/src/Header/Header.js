@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Header extends Component {
     state = { isMenuOpen: false }
+
     handleMenuClick = (e) => {
         const target = e.target;
         this.setState({ isMenuOpen: target.checked });
@@ -10,6 +11,7 @@ class Header extends Component {
         this.setState({ isMenuOpen: !this.state.isMenuOpen });
     }
     render() {
+        const hamburgerMenuClasses = ['overlay overlay-hugeinc']
         return (
             <header className="wrap-home-onepage-header">
                 <div className="home-onepage-header home-onepage-restyle">
@@ -26,8 +28,8 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
-                {this.state.isMenuOpen ? <div className="overlay overlay-hugeinc">
-                    <label htmlFor="op"><img src={require('../images/cross.png')} style={{ padding: '10px', right: '0px', position: 'absolute' }} /></label>
+                {this.state.isMenuOpen ? <div className={hamburgerMenuClasses.join(' ')}>
+                    <label htmlFor="op"></label>
                     <nav>
                         <ul>
                             <li><a className="home-onepage-intro" href="#home-onepage-intro" onClick={this.handleLinkClick}>About restaurant</a></li>

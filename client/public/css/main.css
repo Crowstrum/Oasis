@@ -467,7 +467,7 @@ iframe {
     background-color: #e52233;
 }
 #slider-deli .caption-1 {
-	font-family: PlayfairDisplay-Bold;
+	font-family: PlayfairDisplay-Regular;
 	font-size: 110px;
 	color: white;
 	line-height: 1.5;
@@ -3245,7 +3245,7 @@ background-color: #999999;
 /*///////////////////////////////////////////////////////////////////////////////////// Home Onepage /*/
 
 .wrap-home-onepage {
-	border: 10px solid #e52233;
+	border: 10px solid  #000000;
 }
 
 @media (max-width: 576px) {
