@@ -49,8 +49,76 @@ Title:	18px/1.6 'OpenSans', Arial, sans-serif;
 	font-family: PlayfairDisplay-Bold;
     src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf');
 }
-.menuText {
-	font-family: 'Fjalla One', sans-serif;
+
+@media (min-width: 435px) {
+    .tabletOrHigherOnly {
+        display:block !important;
+    }
+	.mobileOnlyLg {
+        display:none  !important;
+    }
+	 .mobileOnlyMd {
+        display:none  !important;
+    }
+	.mobileOnlySm {
+        display:none  !important;
+    }
+}
+@media (max-width: 435px) {
+	.tabletOrHigherOnly {
+        display:none !important;
+    }
+    .mobileOnlyLg {
+        display:block  !important;
+    }
+	 .mobileOnlyMd {
+        display:none  !important;
+    }
+	.mobileOnlySm {
+        display:none  !important;
+    }
+}
+@media (max-width: 380px) {
+		.tabletOrHigherOnly {
+        display:none !important;
+    }
+	.mobileOnlyLg {
+        display:none  !important;
+    }
+    .mobileOnlyMd {
+        display:block  !important;
+    }
+	.mobileOnlySm {
+        display:none  !important;
+    }
+}
+@media (max-width: 380px) {
+		.tabletOrHigherOnly {
+        display:none !important;
+    }
+	.mobileOnlyLg {
+        display:none  !important;
+    }
+    .mobileOnlyMd {
+        display:block  !important;
+    }
+	.mobileOnlySm {
+        display:none  !important;
+    }
+}
+@media (max-width: 320px) {
+		.tabletOrHigherOnly {
+        display:none !important;
+    }
+	.mobileOnlyLg {
+        display:none  !important;
+    }
+    .mobileOnlyMd {
+        display:none  !important;
+    }
+	.mobileOnlySm {
+        display:block  !important;
+    }
 }
 .videoInsert {
     position: absolute; 
@@ -1099,7 +1167,7 @@ td.active {
 	border: 1px solid #aaa;
 
 }
-input[type="date" i] {
+input[type="date"] {
 	padding: 14px;
 }
 .table-condensed td, .table-condensed th {
@@ -2473,7 +2541,7 @@ background-color: #999999;
     padding-top: 12px;
 }
 .wrap-chose-address-extend.wrap-input-coupon .select2-selection__arrow {
-    margin-top: 12px; !important;
+    margin-top: 12px !important;
 }
 
 
