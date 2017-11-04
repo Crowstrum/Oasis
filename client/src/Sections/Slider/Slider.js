@@ -7,7 +7,7 @@ class Slider extends Component {
         
 		<section id="slider-deli">
 			<div className="rev_slider_wrapper for-vertical-page">
-				<div className="container-fluid" style={{minHeight: '700px', display:'flex',justifyContent:'center',alignItems:'center'}}>
+				<div className="container-fluid" style={{minHeight: '700px', display:'flex',justifyContent:'center',alignItems:'center',textAlignLast: 'center'}}>
 					<div className="tabletOrHigherOnly">
 						<p style={{fontSize:'80px',fontFamily: 'Lobster, cursive', color: 'white'}}>Upgrade Your Smoke</p>
 					</div>
