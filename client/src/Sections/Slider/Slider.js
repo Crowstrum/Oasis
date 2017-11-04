@@ -15,7 +15,6 @@ class Slider extends Component {
  				</video>
 				</div>
 			</div>
-		
 		</section>
         );
     }
