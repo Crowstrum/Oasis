@@ -3328,12 +3328,12 @@ background-color: #999999;
 /*///////////////////////////////////////////////////////////////////////////////////// Home Onepage /*/
 
 .wrap-home-onepage {
-	border: 10px solid  #000000;
+	border: 0px solid  #000000;
 }
 
 @media (max-width: 576px) {
 	.wrap-home-onepage {
-		border: 5px solid #e52233;
+		border: 0px solid #e52233;
 	}
 }
 
