@@ -1,0 +1,1 @@
+export const FETCH_EVENT_DATA = 'FETCH_EVENT_DATA';

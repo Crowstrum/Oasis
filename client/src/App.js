@@ -8,6 +8,7 @@ import Slider from './Sections/Slider/Slider';
 import Menu from './Sections/Menu/index';
 import Event from './Sections/Events/index';
 import Footer from './Sections/Footer/index';
+import { eventActions } from './Actions/index';
 class App extends Component {
   state = { users: [] }
 
@@ -27,7 +28,7 @@ class App extends Component {
           <Menu />
           <Event />
           <Footer />
-
+          {console.log(eventActions.test)}
 
         </div>
       </div >
