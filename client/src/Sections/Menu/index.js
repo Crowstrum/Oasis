@@ -10,7 +10,7 @@ class Menu extends Component {
                     <div className="row">
                         <div className="col-content col-sm-10 col-md-8 col-lg-5">
                             <div className="img-reservation-03 hover-img wow zoomIn">
-                                <img src="images/home-onepage-img-menu.jpg" alt="img-menu" />
+                                <img src={require('../../images/home-onepage-img-menu.jpg')} alt="img-menu" />
                             </div>
                         </div>
 

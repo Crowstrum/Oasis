@@ -36,7 +36,6 @@ class Header extends Component {
                                 <li><a className="home-onepage-intro" href="#home-onepage-intro" style={{ fontFamily: 'Fjalla One, sans-serif' }} onClick={this.handleLinkClick}>About restaurant</a></li>
                                 <li><a href="#home-onepage-our-menu" style={{ fontFamily: 'Fjalla One, sans-serif' }} onClick={this.handleLinkClick}>Menus</a></li>
                                 <li><a href="#home-onepage-event" style={{ fontFamily: 'Fjalla One, sans-serif' }} onClick={this.handleLinkClick}>Events</a></li>
-                                <li><a href="#home-onepage-reservation" style={{ fontFamily: 'Fjalla One, sans-serif' }} onClick={this.handleLinkClick}>Reservations</a></li>
                                 <li><a href="#home-onepage-contact" style={{ fontFamily: 'Fjalla One, sans-serif' }} onClick={this.handleLinkClick}>Contact</a></li>
                             </ul>
                         </nav>

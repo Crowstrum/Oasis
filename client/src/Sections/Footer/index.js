@@ -46,6 +46,12 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="btn-back-to-top" id="myBtn">
+                    <span className="symbol-btn-back-to-top">
+                        <i className="fa fa-angle-double-up" aria-hidden="true"></i>
+                    </span>
+                </div>
             </footer>
         );
     }
