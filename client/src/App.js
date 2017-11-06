@@ -5,6 +5,9 @@ import MenuBarTop from './MenuBar/MenuBarTop';
 import MenuBar from './MenuBar/MenuBar';
 import About from './Sections/About/About';
 import Slider from './Sections/Slider/Slider';
+import Menu from './Sections/Menu/index';
+import Event from './Sections/Events/index';
+import Footer from './Sections/Footer/index';
 class App extends Component {
   state = { users: [] }
 
@@ -20,12 +23,11 @@ class App extends Component {
           <MenuBarTop />
           <Slider />
           <MenuBar />
-
           <About />
-          <section id="home-onepage-our-menu" className="home-onepage-menu content-reservation-03" />
-          <section id="home-onepage-event" className="home-onepage-menu content-reservation-03" />
-          <section id="home-onepage-reservation" className="home-onepage-menu content-reservation-03" />
-          <footer id="home-onepage-contact" className="home-onepage-footer" />
+          <Menu />
+          <Event />
+          <Footer />
+
 
         </div>
       </div >

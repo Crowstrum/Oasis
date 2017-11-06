@@ -7,7 +7,7 @@ class About extends Component {
             <div id="home-onepage-intro" className="wrap-intro">
                 <div className="container">
                     <div className="row">
-                        <div className="text-intro col-sm-10 col-md-7 wow fadeInDown" data-wow-delay="0.5s">
+                        <div className="text-intro col-sm-10 col-md-7 wow fadeInDown" data-wow-delay="0.5s" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                             <h3>introduction</h3>
                             <h2>About Oasis</h2>
                             <p>

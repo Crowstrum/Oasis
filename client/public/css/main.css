@@ -1391,7 +1391,7 @@ footer ul li a:hover {
 
 /*------------------------------------------------------------------- Intro ---*/
 .wrap-intro {
-	background-image: url('../images/bg-intro.jpg');
+	background-image: url('../images/aboutBackground.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1402,20 +1402,20 @@ footer ul li a:hover {
 .text-intro h3 {
 	font-family: OpenSans;
 	font-size: 14px;
-	color: #666666;
+	color: #f8f8f8;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 }
 .text-intro h2 {
 	font-family: PlayfairDisplay-Bold;
 	font-size: 50px;
-	color: #333333;
+	color: #f8f8f8;
 	margin-bottom: 40px;
 }
 .text-intro p {
 	font-family: OpenSans;
 	font-size: 14px;
-	color: #666666;
+	color: #f8f8f8;
 	line-height: 1.8;
 }
 .sign-intro {
@@ -1768,7 +1768,7 @@ footer ul li a:hover {
 }
 
 .wrap-intro.for-about-us {
-	background-image: url('../images/bg-about-us-01.jpg');
+	background-image: url('../images/aboutBackground.jpg');
 	padding-bottom: 70px;
 }
 
@@ -3452,7 +3452,7 @@ background-color: #999999;
 
 /*=================================================================== Intro ===*/
 .wrap-home-onepage .wrap-intro {
-	background-image: url('../images/home-onepage-bg-intro.jpg');
+	background-image: url('../images/aboutBackground.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
