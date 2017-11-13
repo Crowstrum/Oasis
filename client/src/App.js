@@ -9,31 +9,44 @@ import Menu from './Sections/Menu/index';
 import Event from './Sections/Events/index';
 import Footer from './Sections/Footer/index';
 import { eventActions } from './Actions/index';
+import Login from './container/login/index';
+import { connect } from 'react-redux';
+import { loginSuccess, loginError } from './Actions/auth/index';
+import AuthService from './Utility/Auth';
+import Test from './test';
+import { Link, Route, Redirect } from 'react-router-dom';
 class App extends Component {
   state = { users: [] }
 
-  componentDidMount() {
-
+  constructor(props) {
+    super(props);
+    this.authService = new AuthService();
   }
+
+
 
   render() {
     return (
-      <div className="wrap-home-onepage">
-        <div className="wrap-home-onepage-header" style={{ backgroundColor: '#000000' }}>
-          <Header />
-          <MenuBarTop />
-          <Slider />
-          <MenuBar />
-          <About />
-          <Menu />
-          <Event />
-          <Footer />
-          {console.log(eventActions.test)}
 
-        </div>
-      </div >
+      <div>
+
+        <Route exact path="/" component={Test} />
+        <Route exact path="/callback" component={Test} />
+        <Route exact path="/admin" component={About} />
+      </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  auth: state.authReducer,
+});
+
+const mapDispatchToProps = dispatch => {
+  return {
+    loginSuccess: profile => dispatch(loginSuccess(profile)),
+    loginError: err => dispatch(loginError(err.toString())),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

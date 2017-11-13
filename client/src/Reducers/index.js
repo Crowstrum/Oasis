@@ -4,5 +4,5 @@ import { authReducer } from './authReducer';
 
 export default combineReducers({
     routing: routerReducer,
-    auth: authReducer
+    authReducer
 })
